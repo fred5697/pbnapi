@@ -15,7 +15,7 @@ app.post('/api/calculate', (req, res) => {
     }
 
     const result = num1 + num2;
-
+console.log('Received request with body:', req.body);
     res.status(200).json({ result: result });
 });
 
